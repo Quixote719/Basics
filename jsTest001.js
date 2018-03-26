@@ -11,7 +11,8 @@ countries=[
 	{name:'China'},
 	{name: 'China'},
 	{name: 'France'},
-	{name: 'France'}
+	{name: 'France'},
+	{name: 'Germany'}
 ];
 
 var counter={}
@@ -95,7 +96,7 @@ function Teacher(first, last, age, gender, interests, subject){
 }
 Teacher.prototype=new Person();
 //Teacher.prototype=Object.create(Person);
-Teacher.prototype.constructor=Teacher;
+Teacher.prototype.constructor=Teacher;//change the constructor point to Teacher
 var teacher1 = new Teacher('Dave', 'Griffiths', 31, 'male', ['football', 'swimming'], 'mathematics');
 console.log(teacher1);
 
