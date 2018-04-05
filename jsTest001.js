@@ -42,13 +42,26 @@ var arrf002=arr.filter(function(num){return num%2==0;});
 console.log(arrf001);
 console.log(arrf002);
 
+//filter
+function bigEnough(element){
+	return element>3;
+}
+var arrf001=arr.filter(bigEnough);
+var arrf002=arr.filter(function(num){return num%2==0;});
+console.log(arrf001);
+console.log(arrf002);
+
+//reduce
+
+var arrReduce = arr.reduce((prev, cur, index, array)=>{return prev + cur})
+console.log('result of reduce ' + arrReduce);
+
 //reverse a string
 var st = 'Dalaran'
 revarr = st.split('').reverse().join('');
 console.log(revarr);
 
 
-//filter
 //object inheritance
 var ob1={name:'Sven', age:28}
 var ob2=Object.create(ob1);
