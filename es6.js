@@ -35,6 +35,13 @@ console.log(Math.max(14, 3, 77));
 // 扩展运算符（spread）是三个点（...）。它好比 rest 参数的逆运算，将一个数组转为用逗号分隔的参数序列。
 let strArray = console.log([...'abcdefg']);
 
+// find, findIndex
+let findELement = [1,2,4,9,17,8,-5,97].find((val, index, arr)=> val>10);
+console.log('find Element ' + findELement);
+
+let findIndex = [1,2,4,9,17,8,-5,97].findIndex((val, index, arr)=> val<0);
+console.log('find Index ' + findIndex);
+
 //object
 
 console.log('longArray 1' + longArray1);
