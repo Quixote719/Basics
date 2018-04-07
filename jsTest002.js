@@ -85,13 +85,13 @@ function fo2(){
 var c=fo2();
 console.log(c());
 
-//array build in method
+//array build in method: splice slice push pop shift unshift
 //index
 var arr1=[7,5,4,1,5,3,8,2,6,9];
 console.log(arr1.indexOf(3));
 console.log(arr1.indexOf(12));
 
-//splice
+//splice 粘接，胶接
 var myFish=["angel", "clown", "mandarin", "surgeon"];
 myFish.splice(2,0,'salmon');
 console.log(myFish);
@@ -100,12 +100,18 @@ console.log(myFish);
 myFish.splice(1,3,'tuna');
 console.log(myFish);
 
+//slice 切下
+var arrWhole = [1,2,3,4,5,6,7];
+var arrSlice1 = arrWhole.slice(3);
+var arrSlice2 = arrWhole.slice(5);
+console.log('The orginal array is ' + arrWhole +'\n' + 'sliced array 1 ' + arrSlice1 + '\n' + 'sliced array 2' + arrSlice2);
+
 //push and pop, shift and unshift
 var arr2=['pa','mk','sk','sf','bh','ss'];
 arr2.push('spe','am','vs');
 console.log(arr2);
 arr2.pop();arr2.pop();
-console.log(arr2); 
+console.log(arr2);
 arr2.shift();
 console.log(arr2);
 arr2.unshift('Medusa');arr2.unshift('Sven','Sladar');
