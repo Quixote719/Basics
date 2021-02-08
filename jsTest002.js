@@ -132,6 +132,8 @@ obc2.name='changed';
 console.log(obc.name);//changed could not clone this way.
 
 //deep clone in javascript
+// typeof "number", "string", "boolean", "object", "function" 和 "undefined"
+// a instance of b, b这个构造函数是否在a的原型链上 
 obc.name='clone';
 function clone(obj) {
     var copy;
